@@ -23,7 +23,7 @@ GameObject:
   - 50: {fileID: 50000011409279638}
   - 58: {fileID: 58000010535323044}
   - 114: {fileID: 114000013458983218}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Projectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68,8 +68,8 @@ CircleCollider2D:
   m_GameObject: {fileID: 1000013421895006}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_Material: {fileID: 6200000, guid: f71b75c4fc61cca44b050b4d94770c40, type: 2}
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
