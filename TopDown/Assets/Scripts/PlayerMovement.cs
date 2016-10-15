@@ -13,15 +13,15 @@ public class PlayerMovement : MonoBehaviour {
 
 	Vector3 circleCenter;
 	float radius;
-    GameObject planet;
+    public GameObject planet;
 
 	// Use this for initialization
 	void Start () {
 
 		rigid = GetComponent<Rigidbody2D> ();
-        planet = GameObject.FindWithTag("Planet1");
+        //planet = GameObject.FindWithTag("Planet1");
         circleCenter = new Vector3(-10, 0, 0);
-        radius = 4;
+        radius = 3;
     }
 	
 	// Update is called once per frame
@@ -47,11 +47,22 @@ public class PlayerMovement : MonoBehaviour {
 
         //if (Input.GetAxisRaw ("Horizontal") != 0)
 			//rigid.AddForce (vec * thrust);
-
-		if (Input.GetAxisRaw ("Vertical") > 0)
-			rigid.AddForce (vec * thrust);
-        else if(Input.GetAxisRaw("Vertical") < 0)
-            rigid.AddForce(vec * -thrust);
+        
+        if (this.name == "Player_1")
+        {
+            if (Input.GetKey("w"))
+                rigid.AddForce(vec * thrust);
+            else if (Input.GetKey("s"))
+                rigid.AddForce(vec * -thrust);
+        }
+        else if (this.name == "Player_2")
+        {
+            if (Input.GetKey("down"))
+                rigid.AddForce(vec * thrust);
+            else if (Input.GetKey("up"))
+                rigid.AddForce(vec * -thrust);
+        }
+		
 
         /*
         Vector3 test = new Vector3(0, 0, 0); 
