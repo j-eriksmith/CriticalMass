@@ -11,6 +11,9 @@ public class PlayerMovement : MonoBehaviour {
 	float playerSpeedY = 500;
 	Vector3 vec;
 
+	Vector3 circleCenter;
+	float radius;
+
 	// Use this for initialization
 	void Start () {
 
@@ -40,6 +43,12 @@ public class PlayerMovement : MonoBehaviour {
 
 		if (Input.GetAxisRaw ("Vertical") != 0)
 			rigid.AddForce (vec * thrust);
+
+
+		Vector3 offset = transform.position - circleCenter;
+		offset.Normalize ();
+		offset = offset * radius;
+		transform.position = offset; 
 			
 		
 		
