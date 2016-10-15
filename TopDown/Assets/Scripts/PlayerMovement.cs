@@ -4,11 +4,7 @@ using System.Collections;
 public class PlayerMovement : MonoBehaviour {
 	
 	Rigidbody2D rigid;
-	public float thrust = 10;
-	float leftDx;
-	float leftDy;
-	float playerSpeedX = 500;
-	float playerSpeedY = 500;
+	public float thrust;
 	Vector3 vec;
 
 	Vector3 circleCenter;
@@ -19,8 +15,6 @@ public class PlayerMovement : MonoBehaviour {
 	void Start () {
 
 		rigid = GetComponent<Rigidbody2D> ();
-        planet = GameObject.FindWithTag("Planet1");
-        circleCenter = new Vector3(-10, 0, 0);
         radius = 3;
     }
 	
@@ -28,11 +22,8 @@ public class PlayerMovement : MonoBehaviour {
 
 	void Update () {
 		
-
-
-
-		float leftDx = Input.GetAxis ("Horizontal");
-		float leftDy = Input.GetAxis ("Vertical");
+		//float leftDx = Input.GetAxis ("Horizontal");
+		//float leftDy = Input.GetAxis ("Vertical");
 
         //float leftDx = Input.GetAxis ("LeftJoystickX");
         //float leftDy = Input.GetAxis("LeftJoystickX");
