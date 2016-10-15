@@ -13,13 +13,16 @@ public class PlayerMovement : MonoBehaviour {
 
 	Vector3 circleCenter;
 	float radius;
+    GameObject planet;
 
 	// Use this for initialization
 	void Start () {
 
 		rigid = GetComponent<Rigidbody2D> ();
-	
-	}
+        planet = GameObject.FindWithTag("Planet1");
+        circleCenter = new Vector3(-10, 0, 0);
+        radius = 4;
+    }
 	
 	// Update is called once per frame
 
@@ -28,28 +31,50 @@ public class PlayerMovement : MonoBehaviour {
 
 
 
-		//float leftDx = Input.GetAxis ("Horizontal");
+		float leftDx = Input.GetAxis ("Horizontal");
 		float leftDy = Input.GetAxis ("Vertical");
 
-		//float leftDx = Input.GetAxis ("LeftJoystickX");
-		//float leftDy = Input.GetAxis("LeftJoystickX");
+        //float leftDx = Input.GetAxis ("LeftJoystickX");
+        //float leftDy = Input.GetAxis("LeftJoystickX");
 
-		//rigid.velocity = new Vector2 (leftDx * playerSpeedX, leftDy * playerSpeedY) * Time.deltaTime;
+        //rigid.velocity = new Vector2 (leftDx * playerSpeedX, leftDy * playerSpeedY) * Time.deltaTime;
 
-		vec = new Vector3(leftDx, leftDy, 0);
+        //vec = new Vector3(leftDx, leftDy, 0);
+        float x, y;
+        x = -Mathf.Sin(Mathf.Deg2Rad * transform.rotation.eulerAngles.z);
+        y = Mathf.Cos(Mathf.Deg2Rad * transform.rotation.eulerAngles.z);
+        vec = new Vector3(x, y, 0);
 
-		//if (Input.GetAxisRaw ("Horizontal") != 0)
+        //if (Input.GetAxisRaw ("Horizontal") != 0)
 			//rigid.AddForce (vec * thrust);
 
-		if (Input.GetAxisRaw ("Vertical") != 0)
+		if (Input.GetAxisRaw ("Vertical") > 0)
 			rigid.AddForce (vec * thrust);
+        else if(Input.GetAxisRaw("Vertical") < 0)
+            rigid.AddForce(vec * -thrust);
 
+        /*
+        Vector3 test = new Vector3(0, 0, 0); 
+        Vector3 offset = circleCenter - transform.position;
+        test = transform.rotation.eulerAngles;
+        Vector3.RotateTowards(test, offset, 1.0F, 0.0F);
+        transform.rotation = Quaternion.Euler(offset);
+        */
 
-		Vector3 offset = transform.position - circleCenter;
-		offset.Normalize ();
-		offset = offset * radius;
+        float dist = Vector3.Distance(transform.position, planet.transform.position);
+        Vector3 move = Vector3.MoveTowards(transform.position, planet.transform.position, dist - radius);
+        transform.position = move;
+
+        //transform.LookAt(planet.transform, Vector3.right);
+
+        Quaternion rotation = Quaternion.LookRotation(planet.transform.position - transform.position, transform.TransformDirection(Vector3.up));
+        transform.rotation = new Quaternion(0, 0, rotation.z, rotation.w);
+        //transform.Rotate(0, 0, 90);
+        /*
+        offset.Normalize ();
+		offset = offset * 1;
 		transform.position = offset; 
-			
+		*/
 		
 		
 
