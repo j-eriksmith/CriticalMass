@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour {
 
 
 
-		float leftDx = Input.GetAxis ("Horizontal");
+		//float leftDx = Input.GetAxis ("Horizontal");
 		float leftDy = Input.GetAxis ("Vertical");
 
 		//float leftDx = Input.GetAxis ("LeftJoystickX");
@@ -35,8 +35,8 @@ public class PlayerMovement : MonoBehaviour {
 
 		vec = new Vector3(leftDx, leftDy, 0);
 
-		if (Input.GetAxisRaw ("Horizontal") != 0)
-			rigid.AddForce (vec * thrust);
+		//if (Input.GetAxisRaw ("Horizontal") != 0)
+			//rigid.AddForce (vec * thrust);
 
 		if (Input.GetAxisRaw ("Vertical") != 0)
 			rigid.AddForce (vec * thrust);
