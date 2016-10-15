@@ -41,7 +41,7 @@ GameObject:
   - 58: {fileID: 58000013691220740}
   m_Layer: 0
   m_Name: Player_1
-  m_TagString: Player_1
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81,7 +81,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013131986712}
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -116,7 +116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 4000012531341148}
-  Cannon1: {fileID: 1000011436162310, guid: cda51bbac1f4249bd8fe5e78d5399ec7, type: 2}
+  Cannon1: {fileID: 1000013421895006, guid: 5739efdce1efcc446abb3c5ee14f992c, type: 2}
   force: 20
   maxSpeed: 20
   coolDown: 0
@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0d3b73c7b84340fc84ff0aaf0541729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: 10
+  thrust: 5000
   planet: {fileID: 1000012825388206, guid: 3e4b1c239ff0fd64c88e148c8e10e619, type: 2}
 --- !u!212 &212000014082877776
 SpriteRenderer:
