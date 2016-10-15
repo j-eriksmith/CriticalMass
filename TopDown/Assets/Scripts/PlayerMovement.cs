@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour {
 	void Start () {
 
 		rigid = GetComponent<Rigidbody2D> ();
-        //planet = GameObject.FindWithTag("Planet1");
+        planet = GameObject.FindWithTag("Planet1");
         circleCenter = new Vector3(-10, 0, 0);
         radius = 3;
     }

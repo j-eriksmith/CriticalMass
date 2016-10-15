@@ -8,7 +8,7 @@ public class ProjectileTest : MonoBehaviour {
     // Use this for initialization
     void Start () {
         rigid = GetComponent<Rigidbody2D>();
-        //rigid.velocity = new Vector2(2, 2);  //Test velocity
+        rigid.velocity = new Vector2(2, 2);  //Test velocity
 
     }
 	
