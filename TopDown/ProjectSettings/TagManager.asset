@@ -8,6 +8,7 @@ TagManager:
   - Vertical Collider
   - New Tag
   - Planet1
+  - Player_1
   layers:
   - Default
   - TransparentFX
