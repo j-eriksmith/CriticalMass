@@ -4,8 +4,8 @@ using System.Collections;
 public class PlayerMovement : MonoBehaviour {
 	public Transform target;
 	Rigidbody2D rigid;
-	float dx;
-	float dy;
+	float leftDx;
+	float leftDy;
 	float playerSpeedX = 500;
 	float playerSpeedY = 500;
 
@@ -20,12 +20,18 @@ public class PlayerMovement : MonoBehaviour {
 
 	void Update () {
 		
+
+
+
+		float leftDx = Input.GetAxis ("LeftJoystickX");
+		float leftDy = Input.GetAxis ("LeftJoystickY");
+
+		//float leftDx = Input.GetAxis ("Horizontal");
+		//float leftDy = Input.GetAxis("Vertical");
+
+		GetComponent<Rigidbody2D> ().velocity = new Vector2 (leftDx * playerSpeedX, leftDy * playerSpeedY) * Time.deltaTime;
+
 		
-		float dx = Input.GetAxis ("Horizontal");
-		float dy = Input.GetAxis ("Vertical");
-
-		GetComponent<Rigidbody2D> ().velocity = new Vector2 (dx * playerSpeedX, dy * playerSpeedY) * Time.deltaTime;
-
 
 	}
 }
