@@ -22,6 +22,7 @@ public class Blackhole : MonoBehaviour
         if (other.gameObject.tag == "Projectile")
         {
             Destroy(other.gameObject);
+            this.GetComponent<AudioSource>().Play();
         }
     }
 }

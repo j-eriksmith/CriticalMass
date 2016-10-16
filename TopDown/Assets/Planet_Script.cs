@@ -39,6 +39,7 @@ public class Planet_Script : MonoBehaviour {
     {
         if (collision.gameObject.CompareTag("Projectile") || collision.gameObject.CompareTag("meteor"))
         {
+            this.GetComponent<AudioSource>().Play();
             size += .1f;
         }
     }
