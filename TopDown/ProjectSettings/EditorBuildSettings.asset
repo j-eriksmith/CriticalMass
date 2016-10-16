@@ -9,3 +9,11 @@ EditorBuildSettings:
     path: Assets/Kasen.unity
   - enabled: 1
     path: Assets/Yoshi.unity
+  - enabled: 1
+    path: Assets/Level2.unity
+  - enabled: 1
+    path: Assets/Asteroids.unity
+  - enabled: 1
+    path: Assets/Level4.unity
+  - enabled: 1
+    path: Assets/Level5.unity
