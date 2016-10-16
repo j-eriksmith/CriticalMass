@@ -3,6 +3,9 @@ using System.Collections;
 
 public class Planet_Script : MonoBehaviour {
 
+    public float growthFactor;
+    float size = .3f;
+
 
 	// Use this for initialization
 	void Start () {
@@ -12,8 +15,17 @@ public class Planet_Script : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	    if (this.transform.localScale.x >= .8f)
-            this.transform.localScale -= new Vector3(.5f, .5f, 0);
+        if (size > this.transform.localScale.x)
+        {
+            transform.localScale += new Vector3(.1f, .1f, 0) * growthFactor;
+        }
+
+        if (this.transform.localScale.x >= .8f)
+        {
+            this.transform.localScale = new Vector3(.3f, .3f, 0);
+            size = .3f;
+        }
+            
 
 	}
 
@@ -21,7 +33,7 @@ public class Planet_Script : MonoBehaviour {
     {
         if (collision.gameObject.CompareTag("Projectile"))
         {
-            this.transform.localScale += new Vector3(.1f, .1f, 0);
+            size += .1f;
         }
     }
 }
