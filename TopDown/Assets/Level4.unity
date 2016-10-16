@@ -168,6 +168,11 @@ Prefab:
       propertyPath: m_Name
       value: Planet_2
       objectReference: {fileID: 0}
+    - target: {fileID: 114000012973143250, guid: 3e4b1c239ff0fd64c88e148c8e10e619,
+        type: 2}
+      propertyPath: playerNumber
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3e4b1c239ff0fd64c88e148c8e10e619, type: 2}
   m_IsPrefabParent: 0
@@ -598,6 +603,7 @@ GameObject:
   - 124: {fileID: 731337494}
   - 81: {fileID: 731337493}
   - 82: {fileID: 731337498}
+  - 114: {fileID: 731337499}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -747,6 +753,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &731337499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 731337492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384cf519f15c894438a2b5240f3d9498, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &733475756
 Prefab:
   m_ObjectHideFlags: 0
@@ -844,6 +861,11 @@ Prefab:
     - target: {fileID: 1000012825388206, guid: 3e4b1c239ff0fd64c88e148c8e10e619, type: 2}
       propertyPath: m_Name
       value: Planet_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012973143250, guid: 3e4b1c239ff0fd64c88e148c8e10e619,
+        type: 2}
+      propertyPath: playerNumber
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3e4b1c239ff0fd64c88e148c8e10e619, type: 2}
