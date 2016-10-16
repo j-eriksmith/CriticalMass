@@ -19,3 +19,5 @@ EditorBuildSettings:
     path: Assets/Level5.unity
   - enabled: 1
     path: Assets/Orbit.unity
+  - enabled: 1
+    path: Assets/UIStart.unity
