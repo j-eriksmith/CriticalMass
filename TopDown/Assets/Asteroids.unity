@@ -210,10 +210,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1000011252535438, guid: d363636dd138b014c8d10e7c424b4509, type: 2}
-      propertyPath: m_Name
-      value: Right Wall
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d363636dd138b014c8d10e7c424b4509, type: 2}
   m_IsPrefabParent: 0
@@ -406,10 +402,6 @@ Prefab:
     - target: {fileID: 4000010589742000, guid: 53bdca46989d56449bdbcb7c43fd7eea, type: 2}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000013314838310, guid: 53bdca46989d56449bdbcb7c43fd7eea, type: 2}
-      propertyPath: m_Name
-      value: Left Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 53bdca46989d56449bdbcb7c43fd7eea, type: 2}
@@ -783,7 +775,7 @@ MonoBehaviour:
   meteorPrefab: {fileID: 1000011398866196, guid: a4a693b8287d76f45b6af808a4af019b,
     type: 2}
   centerPlanet: {fileID: 2122441355}
-  smallRange: 7
+  smallRange: 5
   bigRange: 7
   meteorThrust: 150
 --- !u!4 &953891162
@@ -793,7 +785,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 953891160}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.34, y: 9.79, z: 0}
+  m_LocalPosition: {x: 13, y: 10, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -920,7 +912,7 @@ MonoBehaviour:
   meteorPrefab: {fileID: 1000011398866196, guid: a4a693b8287d76f45b6af808a4af019b,
     type: 2}
   centerPlanet: {fileID: 2122441355}
-  smallRange: 7
+  smallRange: 5
   bigRange: 7
   meteorThrust: 150
 --- !u!4 &1190139392
@@ -930,7 +922,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1190139390}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.62, y: -10.13, z: 0}
+  m_LocalPosition: {x: -13, y: -10, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -1010,7 +1002,7 @@ MonoBehaviour:
   - {fileID: 1190139390}
   - {fileID: 1288523209}
   - {fileID: 953891160}
-  waveDelay: 20
+  waveDelay: 25
 --- !u!4 &1206645098
 Transform:
   m_ObjectHideFlags: 0
@@ -1018,7 +1010,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1206645096}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.29939163, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -1046,7 +1038,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010069237688, guid: eab510433708446a0af9b08b66f6834d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.06
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000010069237688, guid: eab510433708446a0af9b08b66f6834d, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1147,7 +1139,7 @@ MonoBehaviour:
   meteorPrefab: {fileID: 1000011398866196, guid: a4a693b8287d76f45b6af808a4af019b,
     type: 2}
   centerPlanet: {fileID: 2122441355}
-  smallRange: 7
+  smallRange: 5
   bigRange: 7
   meteorThrust: 150
 --- !u!4 &1288523211
@@ -1157,7 +1149,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1288523209}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.38, y: -10.13, z: 0}
+  m_LocalPosition: {x: 13, y: -10, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -1255,7 +1247,7 @@ MonoBehaviour:
   meteorPrefab: {fileID: 1000011398866196, guid: a4a693b8287d76f45b6af808a4af019b,
     type: 2}
   centerPlanet: {fileID: 2122441355}
-  smallRange: 7
+  smallRange: 5
   bigRange: 7
   meteorThrust: 150
 --- !u!4 &1586027771
@@ -1265,7 +1257,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1586027769}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.1, y: 10.02, z: 0}
+  m_LocalPosition: {x: -13, y: 10, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -1284,7 +1276,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010069237688, guid: eab510433708446a0af9b08b66f6834d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.06
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000010069237688, guid: eab510433708446a0af9b08b66f6834d, type: 2}
       propertyPath: m_LocalPosition.z
