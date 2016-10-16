@@ -8,6 +8,9 @@ TagManager:
   - Player_1
   - Planet
   - edge
+  - Projectile
+  - horizontal edge
+  - verticle edge
   layers:
   - Default
   - TransparentFX
