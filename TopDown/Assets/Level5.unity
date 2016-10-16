@@ -931,7 +931,7 @@ GameObject:
   - 58: {fileID: 1326789951}
   - 111: {fileID: 1326789950}
   m_Layer: 0
-  m_Name: New Sprite
+  m_Name: blackhole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -22,7 +22,11 @@ public class MeteorScript : MonoBehaviour {
             || coll.gameObject.tag == "Planet"
             || coll.gameObject.tag == "Projectile")
         {
-            Destroy(this.gameObject);
+            ParticleSystem explosion = this.GetComponent<ParticleSystem>();
+            this.GetComponent<Rigidbody2D>().isKinematic = true;
+            this.GetComponent<CircleCollider2D>().enabled = false;
+            explosion.Play();
+            Destroy(this.gameObject, explosion.duration);
         }
     }
 }

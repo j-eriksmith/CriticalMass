@@ -24,7 +24,7 @@ GameObject:
   - 50: {fileID: 50000013036998602}
   - 114: {fileID: 114000010853350712}
   m_Layer: 0
-  m_Name: Orbiting objstacle
+  m_Name: Orbiting obstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
