@@ -753,6 +753,52 @@ Transform:
   m_PrefabParentObject: {fileID: 4000012449080338, guid: ba8ad407b80228f498e5eea1c04003e1,
     type: 2}
   m_PrefabInternal: {fileID: 674377432}
+--- !u!1 &953891160
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 953891162}
+  - 114: {fileID: 953891161}
+  m_Layer: 0
+  m_Name: Spawn4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &953891161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 953891160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d2dcbc4a4d21524d8a0fb44e6ccc8cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meteorPrefab: {fileID: 1000011398866196, guid: a4a693b8287d76f45b6af808a4af019b,
+    type: 2}
+  centerPlanet: {fileID: 1313581114}
+  smallRange: 3
+  bigRange: 7
+  meteorThrust: 100
+--- !u!4 &953891162
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 953891160}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.34, y: 9.79, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 1206645098}
+  m_RootOrder: 3
 --- !u!1001 &1076600179
 Prefab:
   m_ObjectHideFlags: 0
@@ -830,6 +876,52 @@ Transform:
   m_PrefabParentObject: {fileID: 4000010069237688, guid: eab510433708446a0af9b08b66f6834d,
     type: 2}
   m_PrefabInternal: {fileID: 1695748742}
+--- !u!1 &1190139390
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1190139392}
+  - 114: {fileID: 1190139391}
+  m_Layer: 0
+  m_Name: Spawn2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1190139391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1190139390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d2dcbc4a4d21524d8a0fb44e6ccc8cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meteorPrefab: {fileID: 1000011398866196, guid: a4a693b8287d76f45b6af808a4af019b,
+    type: 2}
+  centerPlanet: {fileID: 1313581114}
+  smallRange: 3
+  bigRange: 7
+  meteorThrust: 100
+--- !u!4 &1190139392
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1190139390}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -12.62, y: -10.13, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 1206645098}
+  m_RootOrder: 1
 --- !u!1001 &1196240928
 Prefab:
   m_ObjectHideFlags: 0
@@ -872,6 +964,56 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa81a6b8109260c409bf03d85c0984fa, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1206645096
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1206645098}
+  - 114: {fileID: 1206645097}
+  m_Layer: 0
+  m_Name: Spawners
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1206645097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1206645096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6c4f795d72f78c47b1a0aa3d4a8d87e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawners:
+  - {fileID: 1586027769}
+  - {fileID: 1190139390}
+  - {fileID: 1288523209}
+  - {fileID: 953891160}
+  waveDelay: 1
+--- !u!4 &1206645098
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1206645096}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.29939163, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 1586027771}
+  - {fileID: 1190139392}
+  - {fileID: 1288523211}
+  - {fileID: 953891162}
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
 --- !u!4 &1256925562 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000013753696464, guid: aa81a6b8109260c409bf03d85c0984fa,
@@ -961,6 +1103,57 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eab510433708446a0af9b08b66f6834d, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1288523209
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1288523211}
+  - 114: {fileID: 1288523210}
+  m_Layer: 0
+  m_Name: Spawn3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1288523210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1288523209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d2dcbc4a4d21524d8a0fb44e6ccc8cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meteorPrefab: {fileID: 1000011398866196, guid: a4a693b8287d76f45b6af808a4af019b,
+    type: 2}
+  centerPlanet: {fileID: 1313581114}
+  smallRange: 3
+  bigRange: 7
+  meteorThrust: 100
+--- !u!4 &1288523211
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1288523209}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.38, y: -10.13, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 1206645098}
+  m_RootOrder: 2
+--- !u!1 &1313581114 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000010193424800, guid: f21f1fe967a4f87479b8b805f45c056a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1780861306}
 --- !u!1 &1476965477 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000012825388206, guid: 3e4b1c239ff0fd64c88e148c8e10e619,
@@ -1023,6 +1216,52 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5757c692285227247bbd1e93cea0be1a, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1586027769
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1586027771}
+  - 114: {fileID: 1586027770}
+  m_Layer: 0
+  m_Name: Spawn1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1586027770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1586027769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d2dcbc4a4d21524d8a0fb44e6ccc8cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meteorPrefab: {fileID: 1000011398866196, guid: a4a693b8287d76f45b6af808a4af019b,
+    type: 2}
+  centerPlanet: {fileID: 1313581114}
+  smallRange: 3
+  bigRange: 7
+  meteorThrust: 100
+--- !u!4 &1586027771
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1586027769}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -13.1, y: 10.02, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 1206645098}
+  m_RootOrder: 0
 --- !u!1001 &1695748742
 Prefab:
   m_ObjectHideFlags: 0

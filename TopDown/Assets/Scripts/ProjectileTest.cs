@@ -19,7 +19,9 @@ public class ProjectileTest : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Planet"))
+        if(collision.gameObject.CompareTag("Player") 
+            || collision.gameObject.CompareTag("Planet") 
+            || collision.gameObject.tag == "meteor")
         {
             Destroy(this.gameObject);
 			//audioSource.Play ();

@@ -31,7 +31,7 @@ public class Planet_Script : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Projectile"))
+        if (collision.gameObject.CompareTag("Projectile") || collision.gameObject.CompareTag("meteor"))
         {
             size += .1f;
         }
