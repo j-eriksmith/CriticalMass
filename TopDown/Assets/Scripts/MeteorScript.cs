@@ -11,7 +11,8 @@ public class MeteorScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	    
+        if (Vector3.Distance(transform.position, new Vector3(0, 0, 0)) > 30)
+            Destroy(this.gameObject);
 	}
 
    void OnCollisionEnter2D(Collision2D coll)
