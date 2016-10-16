@@ -117,9 +117,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 4000012531341148}
   Cannon1: {fileID: 1000013421895006, guid: 5739efdce1efcc446abb3c5ee14f992c, type: 2}
-  force: 20
+  force: 10
   maxSpeed: 20
   coolDown: 0
+  fire: 
 --- !u!114 &114000013980652964
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Player
   - Player_1
+  - Planet
+  - edge
   layers:
   - Default
   - TransparentFX
