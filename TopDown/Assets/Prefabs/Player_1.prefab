@@ -101,7 +101,7 @@ CircleCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 4.5
@@ -208,7 +208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0d3b73c7b84340fc84ff0aaf0541729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: 7000
+  thrust: 6000
   planet: {fileID: 1000012825388206, guid: 3e4b1c239ff0fd64c88e148c8e10e619, type: 2}
 --- !u!212 &212000014082877776
 SpriteRenderer:

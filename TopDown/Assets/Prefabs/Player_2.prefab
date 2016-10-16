@@ -208,7 +208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0d3b73c7b84340fc84ff0aaf0541729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: 7000
+  thrust: 6000
   planet: {fileID: 0}
 --- !u!212 &212000013539112562
 SpriteRenderer:
