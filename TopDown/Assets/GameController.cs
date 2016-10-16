@@ -18,6 +18,10 @@ public class GameController : MonoBehaviour {
             {
                 ReloadCurrentScene();
             }
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                SceneManager.LoadScene("UIStart", LoadSceneMode.Single);
+            }
         }
 	}
 
