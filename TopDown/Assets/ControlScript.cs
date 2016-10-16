@@ -12,10 +12,12 @@ public class ControlScript : MonoBehaviour {
 	Vector2 directionCannon;
 	public float coolDown = 1f;
     public string fire;
+	public AudioSource audioSource;
 
 
 	void Start () 
 	{
+		audioSource = GetComponent<AudioSource>();
 
 	}
 
@@ -33,6 +35,8 @@ public class ControlScript : MonoBehaviour {
 			rb.AddForce (-directionCannon * force);
 			rb.velocity = transform.forward * maxSpeed;
 			coolDown = 1f;
+			audioSource.Play ();
+
 		}
 		}
 

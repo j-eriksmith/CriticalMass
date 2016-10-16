@@ -4,10 +4,12 @@ using System.Collections;
 public class ProjectileTest : MonoBehaviour {
 
     Rigidbody2D rigid;
+	public AudioSource audioSource;
 
     // Use this for initialization
     void Start () {
         rigid = GetComponent<Rigidbody2D>();
+		audioSource = GetComponent<AudioSource> ();
     }
 	
 	// Update is called once per frame
@@ -20,6 +22,8 @@ public class ProjectileTest : MonoBehaviour {
         if(collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Planet"))
         {
             Destroy(this.gameObject);
+			//audioSource.Play ();
+
         }
     }
 

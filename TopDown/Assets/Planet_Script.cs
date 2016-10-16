@@ -3,8 +3,10 @@ using System.Collections;
 
 public class Planet_Script : MonoBehaviour {
 
+
 	// Use this for initialization
 	void Start () {
+
 	    
 	}
 	
@@ -12,6 +14,7 @@ public class Planet_Script : MonoBehaviour {
 	void Update () {
 	    if (this.transform.localScale.x >= .8f)
             this.transform.localScale -= new Vector3(.5f, .5f, 0);
+
 	}
 
     void OnCollisionEnter2D(Collision2D collision)
