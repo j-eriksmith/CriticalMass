@@ -23,7 +23,11 @@ public class ProjectileTest : MonoBehaviour {
             || collision.gameObject.CompareTag("Planet") 
             || collision.gameObject.tag == "meteor")
         {
-            Destroy(this.gameObject);
+            ParticleSystem explosion = this.GetComponent<ParticleSystem>();
+            this.GetComponent<Rigidbody2D>().isKinematic = true;
+            this.GetComponent<CircleCollider2D>().enabled = false;
+            explosion.Play();
+            Destroy(this.gameObject, explosion.duration);
 			//audioSource.Play ();
 
         }
