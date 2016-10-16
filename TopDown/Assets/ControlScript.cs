@@ -10,7 +10,8 @@ public class ControlScript : MonoBehaviour {
 	Rigidbody2D rb;
 	public float maxSpeed= 10f;
 	Vector2 directionCannon;
-	public float coolDown = 1f;
+	float coolDown = 0f;
+    public float coolDownTime = .8f;
     public string fire;
 	public AudioSource audioSource;
 
@@ -34,7 +35,7 @@ public class ControlScript : MonoBehaviour {
 			directionCannon = rb.velocity + ((Vector2)transform.up * maxSpeed);
 			rb.AddForce (-directionCannon * force);
 			rb.velocity = transform.forward * maxSpeed;
-			coolDown = 1f;
+			coolDown = coolDownTime;
 			audioSource.Play ();
 
 		}
