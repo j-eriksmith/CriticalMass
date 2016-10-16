@@ -455,6 +455,25 @@ Prefab:
       propertyPath: m_Name
       value: Obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 212000013279741060, guid: c1120a495b5e1f748a200d31c4b7e7f2,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c76e5769f9a6c5547881891b83e3f441,
+        type: 3}
+    - target: {fileID: 4000013747033930, guid: c1120a495b5e1f748a200d31c4b7e7f2, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013747033930, guid: c1120a495b5e1f748a200d31c4b7e7f2, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 58000012847500876, guid: c1120a495b5e1f748a200d31c4b7e7f2,
+        type: 2}
+      propertyPath: m_Radius
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c1120a495b5e1f748a200d31c4b7e7f2, type: 2}
   m_IsPrefabParent: 0
