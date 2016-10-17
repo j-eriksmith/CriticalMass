@@ -261,6 +261,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   growthFactor: 0.1
   playerNumber: 
+  hueGrowthFactor: 0.1
 --- !u!114 &114000014172085430
 MonoBehaviour:
   m_ObjectHideFlags: 1
