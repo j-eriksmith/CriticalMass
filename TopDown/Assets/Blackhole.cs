@@ -23,7 +23,6 @@ public class Blackhole : MonoBehaviour
         {
             Destroy(other.gameObject);
             this.GetComponent<AudioSource>().Play();
-            this.GetComponent<ParticleSystem>().Play();
         }
     }
 }
