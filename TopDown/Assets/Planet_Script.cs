@@ -30,7 +30,7 @@ public class Planet_Script : MonoBehaviour {
         if (greenHue < sprite.color.g)
         {
             float greenVal = sprite.color.g;
-            sprite.color = new Color(1, greenVal - hueGrowthFactor, 1);
+            sprite.color = new Color(1, greenVal - hueGrowthFactor, greenVal - hueGrowthFactor);
         }
 
         if (this.transform.localScale.x > .8f)
@@ -45,13 +45,18 @@ public class Planet_Script : MonoBehaviour {
 
 	}
 
+    public Color getColor()
+    {
+        return sprite.color;
+    }
+
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Projectile") || collision.gameObject.CompareTag("meteor"))
         {
             this.GetComponent<AudioSource>().Play();
             size += .1f;
-            greenHue -= .2f;
+            greenHue -= .15f;
         }
     }
 }
