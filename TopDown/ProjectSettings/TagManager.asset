@@ -13,6 +13,7 @@ TagManager:
   - verticle edge
   - meteor
   - blackhole
+  - Wintext
   layers:
   - Default
   - TransparentFX
