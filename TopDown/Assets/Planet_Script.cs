@@ -18,6 +18,7 @@ public class Planet_Script : MonoBehaviour {
 
         sprite = this.GetComponent<SpriteRenderer>();
         cameraObject = GameObject.Find("Main Camera");
+        
     }
 	
 	// Update is called once per frame
@@ -34,8 +35,9 @@ public class Planet_Script : MonoBehaviour {
 
         if (this.transform.localScale.x > .8f)
         {
-            this.transform.localScale = new Vector3(.3f, .3f, 0);
-            size = .3f;
+            GetComponentInChildren<ExplodeScript>().Explode();
+            GetComponentInChildren<ExplodeScript2>().Explode();
+            
 
             cameraObject.GetComponent<GameController>().GameOver(playerNumber);
         }
