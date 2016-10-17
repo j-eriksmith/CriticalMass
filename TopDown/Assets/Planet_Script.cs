@@ -56,7 +56,7 @@ public class Planet_Script : MonoBehaviour {
         {
             this.GetComponent<AudioSource>().Play();
             size += .1f;
-            greenHue -= .15f;
+            greenHue -= .14f;
         }
     }
 }
