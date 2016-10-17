@@ -6,10 +6,13 @@ public class ProjectileTest : MonoBehaviour {
     Rigidbody2D rigid;
 	public AudioSource audioSource;
 
+	GameObject blackhole;
     // Use this for initialization
     void Start () {
         rigid = GetComponent<Rigidbody2D>();
 		audioSource = GetComponent<AudioSource> ();
+		blackhole = GameObject.FindGameObjectWithTag("blackhole");
+
     }
 	
 	// Update is called once per frame
@@ -41,4 +44,20 @@ public class ProjectileTest : MonoBehaviour {
         else if (coll.gameObject.CompareTag("verticle edge"))
             rigid.velocity = new Vector2(rigid.velocity.x * -1, rigid.velocity.y);
     }
-}
+
+
+	public float maxGravDist = 4.0f;
+	public float maxGravity = 35.0f;
+
+	//GameObject[] blackhole;
+
+
+
+	void FixedUpdate () {
+		float dist = Vector3.Distance(blackhole.transform.position, transform.position);
+		if (dist <= maxGravDist) {
+			Vector3 v = blackhole.transform.position - transform.position;
+			rigid.AddForce (v.normalized * (1.0f - dist / maxGravDist) * maxGravity);
+		}
+		}
+	}

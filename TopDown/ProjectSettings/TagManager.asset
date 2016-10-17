@@ -12,6 +12,7 @@ TagManager:
   - horizontal edge
   - verticle edge
   - meteor
+  - blackhole
   layers:
   - Default
   - TransparentFX
