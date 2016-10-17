@@ -46,8 +46,8 @@ public class ProjectileTest : MonoBehaviour {
     }
 
 
-	public float maxGravDist = 4.0f;
-	public float maxGravity = 35.0f;
+	public float maxGravDist = 2.6f;
+	public float maxGravity = 162.0f;
 
 	//GameObject[] blackhole;
 
